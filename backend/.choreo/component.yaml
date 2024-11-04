@@ -1,9 +1,10 @@
 
-version : 0.1
+schemaVersion : 0.1
 
 endpoints:
-  - name : "REST API"
-    port : 8000
+  - name : restapi
     type : REST
+    service:
+      port : 8000
     networkVisibility : Public 
     context : /
